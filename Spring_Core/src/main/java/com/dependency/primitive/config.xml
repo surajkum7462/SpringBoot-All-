@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean name="st1" class=" com.dependency.primitive.Student" p:id="123" p:name="suraj raj" p:address="BBSR">
+     
+     <!--Using Property Method-->
+     <!--<property name="id">
+       <value>1221</value>
+     
+     </property>
+     
+     <property name="name">
+       <value>Suraj</value>
+     
+     </property>
+    
+    <property name="address">
+       <value>BBSR</value>
+     
+     </property>-->
+     
+     <!--Using p-schema-->
+    
+    
+    
+    </bean>
+    
+    
+    
+     <bean name="st2" class=" com.dependency.primitive.Student">
+     
+     <property name="id" value="2343">
+       
+     
+     </property>
+     
+     <property name="name" value="rahul">
+       
+     
+     </property>
+    
+    <property name="address" value="MUMBAI">
+       
+     
+     </property>
+    
+    
+    
+    </bean>
+    
+    
+    
+    
+    
+    
+    
+
+</beans>

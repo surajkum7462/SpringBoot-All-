@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean name="certi" class="com.dependency.contructor.Certificate">
+    
+      <constructor-arg value="1"/>
+      <constructor-arg value="Java"/>
+    
+    </bean>
+     
+   <bean name="st" class="com.dependency.contructor.Student">
+   
+     <constructor-arg value="1" type="int" />
+     <constructor-arg value="Suraj Sahoo"/>
+     <constructor-arg value="BBSR"/>
+     
+     <constructor-arg>
+     
+     <list>
+     <value>Java</value>
+     <value>Python</value>
+     
+     
+     </list>
+     
+     
+     
+     </constructor-arg>
+   
+   <constructor-arg ref="certi"></constructor-arg>
+   
+   
+   </bean>
+    
+    
+    
+    
+
+</beans>
